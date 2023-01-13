@@ -3,6 +3,7 @@
     <div>
       <ul class="flex flex-row py-5 items-center justify-center">
         <li
+          routerLink="web"
           class="text-white px-4 py-1 mx-3 bg-cyan-700 rounded-xl hover:px-5 hover:py-2 hover:cursor-pointer hover:bg-emerald-600"
         >
           Project1
@@ -29,6 +30,10 @@
         </li>
       </ul>
     </div>
+    <div class="bg-slate-100 w-1/2 h-80 rounded-2xl mx-auto">
+      <router-outlet></router-outlet>
+    </div>
+    <!--
     <div class="bg-slate-100 w-1/2 h-80 rounded-2xl">
       <div class="flex flex-row">
         <img
@@ -52,6 +57,6 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 </div>
