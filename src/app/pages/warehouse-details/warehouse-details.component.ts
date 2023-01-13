@@ -7,7 +7,32 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class WarehouseDetailsComponent implements OnInit {
 
-
+  products:any[]=[
+    {
+      "codigo": 1,
+      "descripcion": 'Galletas Choco',
+      "precio": 593,
+      "precio de venta": 600,
+      "ganancia": 7,
+      "stock": 9583
+    },
+    {
+      "codigo": 2,
+      "descripcion": 'Galletas Vain',
+      "precio": 533,
+      "precio de venta": 600,
+      "ganancia": 7,
+      "stock": 95883
+    },
+    {
+      "codigo": 3,
+      "descripcion": 'Galletas Menta',
+      "precio": 553,
+      "precio de venta": 600,
+      "ganancia": 7,
+      "stock": 95873
+    }
+  ]
 
   id = 'algo'
 

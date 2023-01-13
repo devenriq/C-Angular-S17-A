@@ -2,52 +2,28 @@
   <table class="table w-full border">
     <thead class="table-header-group">
       <tr class="table-row">
-        <th class="table-cell text-left">Company</th>
-        <th class="table-cell">Contact</th>
-        <th class="table-cell">Contact</th>
-        <th class="table-cell">Contact</th>
+        <th class="table-cell text-left">Código</th>
+        <th class="table-cell">Descripción</th>
+        <th class="table-cell">Precio</th>
+        <th class="table-cell">Info</th>
       </tr>
     </thead>
     <tbody class="table-row-group">
-      <tr class="table-row">
-        <td class="table-cell">Alfreds Futterkiste</td>
-        <td class="table-cell">Maria Anders</td>
-        <td class="table-cell">Germany</td>
+      <tr class="table-row" *ngFor="let product of products">
+        <td class="table-cell">{{ product.codigo }}</td>
+        <td class="table-cell">{{ product.descripcion }}</td>
+        <td class="table-cell">{{ product.precio }}</td>
         <td class="table-cell">
           <button
             class="bg-slate-500 text-white rounded-lg p-1"
-            (click)="goDetail(43)"
+            [id]="1"
+            (click)="goDetail(product.codigo)"
           >
             More info
           </button>
         </td>
       </tr>
-      <tr>
-        <td class="table-cell">Centro comercial Moctezuma</td>
-        <td class="table-cell">Francisco Chang</td>
-        <td class="table-cell">Mexico</td>
-        <td class="table-cell">
-          <button
-            class="bg-slate-500 text-white rounded-lg p-1"
-            (click)="goDetail(43)"
-          >
-            More info
-          </button>
-        </td>
-      </tr>
-      <tr>
-        <td class="table-cell">Francisco Chang</td>
-        <td class="table-cell">Mexico</td>
-        <td class="table-cell">Mexico</td>
-        <td class="table-cell">
-          <button
-            class="bg-slate-500 text-white rounded-lg p-1"
-            (click)="goDetail(43)"
-          >
-            More info
-          </button>
-        </td>
-      </tr>
+      <tr></tr>
     </tbody>
   </table>
 </div>

@@ -1,33 +1,23 @@
-<div class="bg-slate-100 w-2/3 h-96 rounded-2xl mx-auto my-10">
+<div class="bg-slate-100 w-2/3 h-96 rounded-2xl mx-auto my-10 flex">
   <table class="table w-full border">
     <thead class="table-header-group">
       <tr class="table-row">
-        <th class="table-cell text-left">Company</th>
-        <th class="table-cell">Contact</th>
-        <th class="table-cell">Contact</th>
-        <th class="table-cell">Contact</th>
-        <th class="table-cell">Contact</th>
-        <th class="table-cell">Contact</th>
+        <th class="table-cell text-left">Código</th>
+        <th class="table-cell">Descripción</th>
+        <th class="table-cell">Precio de compra</th>
+        <th class="table-cell">Precio de venta</th>
+        <th class="table-cell">Ganancia</th>
+        <th class="table-cell">Stock</th>
       </tr>
     </thead>
     <tbody class="table-row-group">
-      <tr class="table-row">
-        <td class="table-cell">Alfreds Futterkiste</td>
-      </tr>
-      <tr>
-        <td class="table-cell">Centro comercial Moctezuma</td>
-      </tr>
-      <tr>
-        <td class="table-cell">Francisco Chang</td>
-      </tr>
-      <tr>
-        <td class="table-cell">Francisco Chang</td>
-      </tr>
-      <tr>
-        <td class="table-cell">Francisco Chang</td>
-      </tr>
-      <tr>
-        <td class="table-cell">Francisco Chang</td>
+      <tr class="table-row" *ngFor="let product of products">
+        <td class="table-cell">{{ product.codigo }}</td>
+        <td class="table-cell">{{ product.descripcion }}</td>
+        <td class="table-cell">{{ product.precio }}</td>
+        <td class="table-cell">{{ product[2] }}</td>
+        <td class="table-cell">{{ product.ganancia }}</td>
+        <td class="table-cell">{{ product.stock }}</td>
       </tr>
     </tbody>
   </table>
