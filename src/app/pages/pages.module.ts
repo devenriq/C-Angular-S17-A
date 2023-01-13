@@ -5,6 +5,7 @@ import { ContactComponent } from './contact/contact.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ServicesComponent } from './services/services.component';
 import { AboutComponent } from './about/about.component';
+import { WebComponent } from './web/web.component';
 
 
 
@@ -14,7 +15,8 @@ import { AboutComponent } from './about/about.component';
     ContactComponent,
     PortfolioComponent,
     ServicesComponent,
-    AboutComponent
+    AboutComponent,
+    WebComponent
   ],
   exports:[
     HomeComponent,
