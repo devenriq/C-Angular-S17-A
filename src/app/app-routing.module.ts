@@ -1,11 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './pages/about/about.component';
+import { AlmacenComponent } from './pages/almacen/almacen.component';
 import { BreakingComponent } from './pages/breaking/breaking.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { HomeComponent } from './pages/home/home.component';
 import { PortfolioComponent } from './pages/portfolio/portfolio.component';
 import { ServicesComponent } from './pages/services/services.component';
+import { WarehouseDetailsComponent } from './pages/warehouse-details/warehouse-details.component';
 import { WebComponent } from './pages/web/web.component';
 
 const routes: Routes = [
@@ -18,6 +20,8 @@ const routes: Routes = [
       {path:'web', component:WebComponent}
     ]
   },
+  {path:'almacen', component:AlmacenComponent},
+  {path:'warehouse-details/:id', component: WarehouseDetailsComponent},
   {path:'404', component:BreakingComponent},
   {path:'**', redirectTo:'404', pathMatch:'full'}
 

@@ -11,6 +11,8 @@ import { WebComponent } from './web/web.component';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import { AppRoutingModule } from '../app-routing.module';
 import { BreakingComponent } from './breaking/breaking.component';
+import { AlmacenComponent } from './almacen/almacen.component';
+import { WarehouseDetailsComponent } from './warehouse-details/warehouse-details.component';
 
 
 
@@ -22,7 +24,9 @@ import { BreakingComponent } from './breaking/breaking.component';
     ServicesComponent,
     AboutComponent,
     WebComponent,
-    BreakingComponent
+    BreakingComponent,
+    AlmacenComponent,
+    WarehouseDetailsComponent
   ],
   exports:[
     HomeComponent,
