@@ -10,15 +10,21 @@
         <th class="table-cell">Stock</th>
       </tr>
     </thead>
-    <tbody class="table-row-group">
-      <tr class="table-row" *ngFor="let product of products">
-        <td class="table-cell">{{ product.codigo }}</td>
-        <td class="table-cell">{{ product.descripcion }}</td>
-        <td class="table-cell">{{ product.precio }}</td>
-        <td class="table-cell">{{ product[2] }}</td>
-        <td class="table-cell">{{ product.ganancia }}</td>
-        <td class="table-cell">{{ product.stock }}</td>
+    <tbody class="table-row-group" *ngFor="let product of products">
+      <tr class="table-row">
+        <td class="table-cell" *ngIf="id == product.code">
+          {{ product.codigo }}
+        </td>
+        <td class="table-cell text-center" *ngIf="id == product.code">
+          {{ product.descripcion }}
+        </td>
+        <td class="table-cell text-center">{{ product.precio }}</td>
+        <td class="table-cell text-center">{{ product["precio de venta"] }}</td>
+        <td class="table-cell text-center">{{ product.ganancia }}</td>
+        <td class="table-cell text-center">{{ product.stock }}</td>
       </tr>
     </tbody>
   </table>
 </div>
+
+<p>Estamos en el id {{ id }}</p>
